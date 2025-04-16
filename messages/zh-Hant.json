@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "多語言示範網站",
+    "description": "使用 Next.js 和 next-intl 的多語言網站示範"
+  },
+  "nav": {
+    "home": "首頁",
+    "about": "關於我們",
+    "services": "服務項目",
+    "contact": "聯絡我們"
+  },
+  "home": {
+    "title": "歡迎來到多語言示範網站",
+    "introduction": "這是一個使用 Next.js 和 next-intl 建立的多語言網站。預設語言為繁體中文，同時支援英語、日語和法語。",
+    "features": {
+      "title": "主要功能",
+      "feature1": {
+        "title": "多語言支援",
+        "description": "使用 next-intl 提供完整的多語言支援"
+      },
+      "feature2": {
+        "title": "動態路由",
+        "description": "基於語言前綴的動態路由系統"
+      },
+      "feature3": {
+        "title": "語言自動偵測",
+        "description": "自動偵測瀏覽器語言設定"
+      },
+      "feature4": {
+        "title": "SEO 友好",
+        "description": "為每種語言生成專屬的 SEO 元數據"
+      }
+    },
+    "cta": "了解更多"
+  },
+  "about": {
+    "title": "關於我們",
+    "introduction": "我們是一個致力於提供多語言解決方案的團隊。",
+    "mission": "我們的使命是打破語言障礙，讓世界各地的用戶都能輕鬆使用您的網站。",
+    "team": {
+      "title": "我們的團隊",
+      "description": "由經驗豐富的開發人員和語言專家組成"
+    }
+  },
+  "services": {
+    "title": "服務項目",
+    "introduction": "我們提供多種多語言解決方案，幫助您的業務拓展全球市場。",
+    "service1": {
+      "title": "網站國際化",
+      "description": "將您的網站轉換為多語言版本"
+    },
+    "service2": {
+      "title": "內容本地化",
+      "description": "適應不同文化和地區的內容調整"
+    },
+    "service3": {
+      "title": "多語言 SEO",
+      "description": "針對不同語言市場優化您的搜索引擎排名"
+    }
+  },
+  "contact": {
+    "title": "聯絡我們",
+    "introduction": "有任何問題或合作意向？請隨時與我們聯繫。",
+    "form": {
+      "name": "姓名",
+      "email": "電子郵件",
+      "message": "訊息",
+      "submit": "發送"
+    },
+    "contact_info": {
+      "title": "聯絡資訊",
+      "address": "台北市信義區世貿中心",
+      "phone": "+886 2 1234 5678",
+      "email": "contact@example.com"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} 多語言示範網站。保留所有權利。",
+    "language": "語言"
+  }
+}

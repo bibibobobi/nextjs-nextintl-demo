@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Multilingual Demo Website",
+    "description": "A multilingual website demonstration using Next.js and next-intl"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to the Multilingual Demo Website",
+    "introduction": "This is a multilingual website built with Next.js and next-intl. The default language is Traditional Chinese, with support for English, Japanese, and French.",
+    "features": {
+      "title": "Key Features",
+      "feature1": {
+        "title": "Multilingual Support",
+        "description": "Full multilingual support using next-intl"
+      },
+      "feature2": {
+        "title": "Dynamic Routing",
+        "description": "Language-based dynamic routing system"
+      },
+      "feature3": {
+        "title": "Language Detection",
+        "description": "Automatic detection of browser language settings"
+      },
+      "feature4": {
+        "title": "SEO Friendly",
+        "description": "Language-specific SEO metadata generation"
+      }
+    },
+    "cta": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "introduction": "We are a team dedicated to providing multilingual solutions.",
+    "mission": "Our mission is to break language barriers and make your website accessible to users around the world.",
+    "team": {
+      "title": "Our Team",
+      "description": "Composed of experienced developers and language specialists"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "introduction": "We offer various multilingual solutions to help your business expand globally.",
+    "service1": {
+      "title": "Website Internationalization",
+      "description": "Convert your website into multiple languages"
+    },
+    "service2": {
+      "title": "Content Localization",
+      "description": "Adapt content for different cultures and regions"
+    },
+    "service3": {
+      "title": "Multilingual SEO",
+      "description": "Optimize your search engine rankings for different language markets"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "introduction": "Have questions or interested in collaboration? Feel free to get in touch with us.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "contact_info": {
+      "title": "Contact Information",
+      "address": "World Trade Center, Xinyi District, Taipei",
+      "phone": "+886 2 1234 5678",
+      "email": "contact@example.com"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Multilingual Demo Website. All rights reserved.",
+    "language": "Language"
+  }
+}

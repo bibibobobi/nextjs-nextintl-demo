@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Site Web de Démonstration Multilingue",
+    "description": "Démonstration d'un site web multilingue utilisant Next.js et next-intl"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bienvenue sur le Site Web de Démonstration Multilingue",
+    "introduction": "Ceci est un site web multilingue construit avec Next.js et next-intl. La langue par défaut est le chinois traditionnel, avec support pour l'anglais, le japonais et le français.",
+    "features": {
+      "title": "Fonctionnalités Clés",
+      "feature1": {
+        "title": "Support Multilingue",
+        "description": "Support multilingue complet utilisant next-intl"
+      },
+      "feature2": {
+        "title": "Routage Dynamique",
+        "description": "Système de routage dynamique basé sur la langue"
+      },
+      "feature3": {
+        "title": "Détection de Langue",
+        "description": "Détection automatique des paramètres de langue du navigateur"
+      },
+      "feature4": {
+        "title": "Optimisé pour le SEO",
+        "description": "Génération de métadonnées SEO spécifiques à chaque langue"
+      }
+    },
+    "cta": "En Savoir Plus"
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "introduction": "Nous sommes une équipe dédiée à fournir des solutions multilingues.",
+    "mission": "Notre mission est de briser les barrières linguistiques et de rendre votre site web accessible aux utilisateurs du monde entier.",
+    "team": {
+      "title": "Notre Équipe",
+      "description": "Composée de développeurs expérimentés et de spécialistes des langues"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "introduction": "Nous offrons diverses solutions multilingues pour aider votre entreprise à se développer à l'échelle mondiale.",
+    "service1": {
+      "title": "Internationalisation de Sites Web",
+      "description": "Convertir votre site web en plusieurs langues"
+    },
+    "service2": {
+      "title": "Localisation de Contenu",
+      "description": "Adapter le contenu pour différentes cultures et régions"
+    },
+    "service3": {
+      "title": "SEO Multilingue",
+      "description": "Optimiser votre classement dans les moteurs de recherche pour différents marchés linguistiques"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "introduction": "Vous avez des questions ou êtes intéressé par une collaboration ? N'hésitez pas à nous contacter.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer"
+    },
+    "contact_info": {
+      "title": "Informations de Contact",
+      "address": "Centre du Commerce Mondial, District de Xinyi, Taipei",
+      "phone": "+886 2 1234 5678",
+      "email": "contact@example.com"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Site Web de Démonstration Multilingue. Tous droits réservés.",
+    "language": "Langue"
+  }
+}

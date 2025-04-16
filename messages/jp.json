@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "多言語デモウェブサイト",
+    "description": "Next.jsとnext-intlを使用した多言語ウェブサイトのデモンストレーション"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "services": "サービス",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "title": "多言語デモウェブサイトへようこそ",
+    "introduction": "これはNext.jsとnext-intlで構築された多言語ウェブサイトです。デフォルト言語は繁体字中国語で、英語、日本語、フランス語をサポートしています。",
+    "features": {
+      "title": "主な機能",
+      "feature1": {
+        "title": "多言語サポート",
+        "description": "next-intlを使用した完全な多言語サポート"
+      },
+      "feature2": {
+        "title": "動的ルーティング",
+        "description": "言語ベースの動的ルーティングシステム"
+      },
+      "feature3": {
+        "title": "言語検出",
+        "description": "ブラウザの言語設定の自動検出"
+      },
+      "feature4": {
+        "title": "SEOフレンドリー",
+        "description": "言語固有のSEOメタデータの生成"
+      }
+    },
+    "cta": "詳細を見る"
+  },
+  "about": {
+    "title": "会社概要",
+    "introduction": "私たちは多言語ソリューションを提供することに専念しているチームです。",
+    "mission": "私たちの使命は言語の壁を取り除き、世界中のユーザーがあなたのウェブサイトにアクセスできるようにすることです。",
+    "team": {
+      "title": "私たちのチーム",
+      "description": "経験豊富な開発者と言語専門家で構成されています"
+    }
+  },
+  "services": {
+    "title": "サービス",
+    "introduction": "私たちはビジネスのグローバル展開を支援するための様々な多言語ソリューションを提供しています。",
+    "service1": {
+      "title": "ウェブサイトの国際化",
+      "description": "あなたのウェブサイトを複数の言語に変換します"
+    },
+    "service2": {
+      "title": "コンテンツのローカライズ",
+      "description": "異なる文化や地域に合わせたコンテンツの調整"
+    },
+    "service3": {
+      "title": "多言語SEO",
+      "description": "異なる言語市場での検索エンジンランキングを最適化"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "introduction": "質問や協力に興味がありますか？お気軽にご連絡ください。",
+    "form": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "message": "メッセージ",
+      "submit": "送信"
+    },
+    "contact_info": {
+      "title": "連絡先情報",
+      "address": "台北市信義区世界貿易センター",
+      "phone": "+886 2 1234 5678",
+      "email": "contact@example.com"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} 多言語デモウェブサイト。全ての権利を保有。",
+    "language": "言語"
+  }
+}
