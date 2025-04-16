@@ -1,3 +1,4 @@
+// components/ClientLanguageDetector.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -8,16 +9,24 @@ export default function ClientLanguageDetector() {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if language cookie already exists
-    const hasLocaleCookie = document.cookie
+    // Get the NEXT_LOCALE cookie if it exists
+    const localeCookie = document.cookie
       .split("; ")
-      .some((c) => c.startsWith("NEXT_LOCALE="));
+      .find((cookie) => cookie.startsWith("NEXT_LOCALE="));
+
+    const cookieValue = localeCookie ? localeCookie.split("=")[1] : null;
+    console.log("NEXT_LOCALE cookie:", cookieValue || "not set");
+
+    // Check if language cookie already exists
+    const hasLocaleCookie = !!cookieValue;
 
     // Only detect language if no cookie is present
     if (!hasLocaleCookie) {
       try {
-        // Use Intl.NumberFormat to detect browser language - more accurate than navigator.language
+        // Use Intl.NumberFormat to detect browser locale
         const browserLocale = Intl.NumberFormat().resolvedOptions().locale;
+        console.log("Detected browser locale:", browserLocale);
+
         let detectedLocale = routing.defaultLocale;
 
         // Map the detected language code to our supported languages
@@ -37,10 +46,13 @@ export default function ClientLanguageDetector() {
           detectedLocale = "fr";
         }
 
+        console.log("Mapped to supported locale:", detectedLocale);
+
         // Set language cookie with 30-day expiration
         const date = new Date();
         date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
         document.cookie = `NEXT_LOCALE=${detectedLocale};expires=${date.toUTCString()};path=/`;
+        console.log("Cookie set to:", detectedLocale);
 
         // If detected language isn't default and current URL has no language prefix, redirect
         if (
@@ -49,7 +61,13 @@ export default function ClientLanguageDetector() {
             new RegExp(`^\\/(${routing.locales.join("|")})\\/`)
           )
         ) {
+          console.log(
+            "Redirecting to:",
+            `/${detectedLocale}${window.location.pathname}`
+          );
           router.replace(`/${detectedLocale}${window.location.pathname}`);
+        } else {
+          console.log("No redirect needed");
         }
       } catch (e) {
         console.error("Error detecting browser locale:", e);
