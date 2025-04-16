@@ -3,11 +3,11 @@ import ContactForm from "@/components/ContactForm";
 import { setRequestLocale } from "next-intl/server";
 
 type PageProps = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>; // Adjusted to reflect the asynchronous nature
 };
 
 export default async function Contact({ params }: PageProps) {
-  const { locale } = params;
+  const { locale } = await params; // Await the params object if it's a Promise
   // 啟用語言設定
   setRequestLocale(locale);
 
