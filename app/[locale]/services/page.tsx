@@ -1,12 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 
-export default async function Services({
-  params,
-}: {
+type PageProps = {
   params: { locale: string };
-}) {
-  const { locale } = await params;
+};
+
+export default async function Services({ params }: PageProps) {
+  const { locale } = params;
   // 啟用語言設定
   setRequestLocale(locale);
 

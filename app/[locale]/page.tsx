@@ -3,8 +3,12 @@ import { Link } from "@/i18n/navigation";
 import FeatureCard from "@/components/FeatureCard";
 import { setRequestLocale } from "next-intl/server";
 
-export default async function Home({ params }: { params: { locale: string } }) {
-  const { locale } = await params;
+type PageProps = {
+  params: { locale: string };
+};
+
+export default async function Home({ params }: PageProps) {
+  const { locale } = params;
   // 啟用語言設定
   setRequestLocale(locale);
 
