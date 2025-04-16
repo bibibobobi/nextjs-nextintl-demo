@@ -1,15 +1,16 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 
-export default function About({
-  params: { locale },
+export default async function About({
+  params,
 }: {
   params: { locale: string };
 }) {
+  const { locale } = await params;
   // 啟用語言設定
   setRequestLocale(locale);
 
-  const t = useTranslations("about");
+  const t = await getTranslations("about");
 
   return (
     <div className="container mx-auto px-4 py-8">

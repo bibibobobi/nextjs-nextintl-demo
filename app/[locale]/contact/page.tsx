@@ -1,16 +1,17 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/ContactForm";
 import { setRequestLocale } from "next-intl/server";
 
-export default function Contact({
-  params: { locale },
+export default async function Contact({
+  params,
 }: {
   params: { locale: string };
 }) {
+  const { locale } = await params;
   // 啟用語言設定
   setRequestLocale(locale);
 
-  const t = useTranslations("contact");
+  const t = await getTranslations("contact");
 
   return (
     <div className="container mx-auto px-4 py-8">
