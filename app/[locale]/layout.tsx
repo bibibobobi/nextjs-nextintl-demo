@@ -6,6 +6,7 @@ import { getMessages } from "next-intl/server";
 import { locales } from "@/i18n";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClientLanguageDetector from "@/components/ClientLanguageDetector";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,13 +33,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  // 獲取翻譯消息
+  // Get translation messages
   const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
+          <ClientLanguageDetector />
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-grow">{children}</main>
