@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/navigation";
+import { Link } from "@/i18n/navigation";
 import FeatureCard from "@/components/FeatureCard";
 import { setRequestLocale } from "next-intl/server";
 

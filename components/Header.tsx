@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {

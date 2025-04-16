@@ -10,7 +10,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    // 使用絕對路徑
     messages: (await import(`@/messages/${locale}.json`)).default,
   };
 });
