@@ -76,12 +76,12 @@ In the `messages` directory, JSON files are created for each supported language:
 // messages/zh-Hant.json (Traditional Chinese - Default language)
 {
   "metadata": {
-    "title": "Multilingual Demo Website",
-    "description": "A multilingual website demo using Next.js and next-intl"
+    "title": "多語言示範網站",
+    "description": "使用 Next.js 和 next-intl 的多語言網站示範"
   },
   "nav": {
-    "home": "Home",
-    "about": "About"
+    "home": "首頁",
+    "about": "關於我們"
   }
 }
 ```
